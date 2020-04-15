@@ -1,0 +1,10 @@
+#name
+#createAt
+#[todoId]
+
+#Schema
+
+type Resolutions{
+    _id:String!
+    name:String!
+}

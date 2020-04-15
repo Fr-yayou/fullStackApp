@@ -1,9 +1,18 @@
 import React from 'react';
-import { Meteor } from 'meteor/meteor';
-import { render } from 'react-dom';
+//gql allowed us to write querie in javascript//
+import gql from 'graphql-tag';
+import { graphql } from 'react-apollo'
 
-const App = () => {
-    return <h1>Hello world</h1>
+
+
+
+const App = ({ data }) => <h1>{data.hi}</h1>
+
+
+const hiQuery = gql`
+{
+    hi
 }
-
-export default App
+`;
+export default graphql(hiQuery)
+(App)

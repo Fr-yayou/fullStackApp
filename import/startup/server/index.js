@@ -1,15 +1,17 @@
 import { createApolloServer } from 'meteor/apollo';
 import { makeExecutableSchema } from 'graphql-tools';
 
+import './register-api';
 
-//this is Graphql//
+
+//This is Graphql language//
 //Graphql schema with query//
 const typeDefs = `
 type Query {
     hi: String
 }
 `;
-//this is a methode//
+//This is a methode//
 const resolvers = {
     Query: {
         hi() {

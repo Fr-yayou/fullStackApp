@@ -1,0 +1,7 @@
+
+//install babel-plugin-inline-import otherwise meteor not gonna work with the schema
+{
+  "plugins": [
+    "import-graphql"
+  ]
+}
